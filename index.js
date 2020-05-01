@@ -6,7 +6,7 @@ var client = new discord.Client();
 
 
 
-client.login("YOUR TOKEN HERE"); // enter your token
+client.login("your token here"); // enter your token
 
 client.on("ready", function() {
 	console.log("logged in");

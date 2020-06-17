@@ -1,11 +1,11 @@
 var cheerio = require("cheerio"); 
 var request = require("request"); 
-const config = require("./config.json")
+
 
 var discord = require("discord.js");
 var client = new discord.Client();
 
-
+client.login(" YOUR TOKEN "); // enter your token
 
 
 // help command begin
@@ -109,8 +109,6 @@ function status3() {
 
 
 
-client.login(config.token); // enter your token
-
 client.on("ready", function() {
 	console.log("logged in");
 });
@@ -176,7 +174,7 @@ function image(message, parts) {
     .setURL('https://web.lukynka.ga')
     .setImage( urls[0] )
     .setTimestamp()
-    .setFooter('Bot by LukynkaCZE', 'https://i.imgur.com/6RoCg1R.png');
+    .setFooter('Random google Images by LukynkaCZE', 'https://i.imgur.com/6RoCg1R.png');
   
   message.channel.send(exampleEmbed);
 
